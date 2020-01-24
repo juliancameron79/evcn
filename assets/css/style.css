@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+   * Custom translucent site header
+   */
+
+.site-header {
+	background-color: rgba(0, 0, 0, 0.85);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	backdrop-filter: saturate(180%) blur(20px);
+}
+/*
+.site-header a {
+	color: #999;
+	transition: ease-in-out color 0.15s;
+}
+.site-header a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+*/
+.starter-template {
+	padding: 3rem 1.5rem;
+	text-align: center;
+	background: url(/assets/images/forced-perspective-photography-of-cars-running-on-road-below-799443-cropped.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 100vh;
+	padding-top: 6rem;
+}
+
+.text-background {
+	background-color: rgba(250, 235, 215, 0.66);
+}
+
+.lead {
+	background-color: rgba(250, 235, 215, 0.66);
+}
+h1 {
+	background-color: rgba(250, 235, 215, 0.66);
+}
+
+.network-container {
+	background-color: greenyellow;
+	height: 100vh;
+}
+
+#map {
+	height: 100%;
+}
+
+.contact-us-container {
+	background-color: orange;
+	height: 60vh;
+}
+
+.footer {
+	background-color: blueviolet;
+	height: auto;
+}
