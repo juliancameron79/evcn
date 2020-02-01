@@ -5,16 +5,12 @@ body {
 	background-color: #fff;
 }
 
-/*
-   * Custom translucent site header
-   */
-
 .site-header {
-	background-color: #000089;
-	-webkit-backdrop-filter: saturate(180%) blur(20px);
-	backdrop-filter: saturate(180%) blur(20px);
+	background-color: #000089e5;
+	/*-webkit-backdrop-filter: saturate(180%) blur(50px);
+	backdrop-filter: saturate(50%) blur(20px);*/
 }
-/*
+
 .site-header a {
 	color: #999;
 	transition: ease-in-out color 0.15s;
@@ -23,7 +19,7 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
-*/
+
 .starter-template {
 	padding: 3rem 1.5rem;
 	text-align: center;
@@ -52,13 +48,17 @@ h1 {
 
 .network-container {
 	background-color: #fff;
-	height: 75vh;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-content: center;
 }
 
 /* Map section */
+
+.tt {
+	padding: 0;
+}
 
 #map {
 	min-height: 660px;
@@ -68,7 +68,7 @@ h1 {
 
 .contact-us-container {
 	background-color: #ebebff;
-	height: 50vh;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -92,14 +92,21 @@ h1 {
 
 .footer {
 	background-color: #fff;
-	height: auto;
-	display: flex;
-	align-content: center;
+	height: 20px;
 }
 
+.copyright {
+	font-size: 0.7rem;
+	margin: 0.2rem;
+	display: flex;
+	justify-content: center;
+}
+
+.copy-right-text {
+}
 .social-icons-list-items {
 	display: inline-block;
-	margin-right: 10px;
+	margin-right: 5px;
 }
 
 .social-icons {
@@ -118,15 +125,14 @@ h1 {
 	color: #fff;
 	background: #000089;
 	-moz-transition: all 0.35s ease-in-out;
-	-wbekit-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
 	-o-transition: all 0.35s ease-in-out;
 }
 
 .social-icons li a i:hover {
 	color: #000089;
-	background-color: #fff;
-	border-color: #000089;
-	border-width: 1px;
+	background-color: #b1b1ff;
+	border-style: 2px solid blue;
 }
 
 .social-icons {
@@ -143,7 +149,7 @@ h5.follow-us-title {
 	justify-content: flex-start;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
 	.follow-us-container {
 		display: flex;
 		justify-content: flex-end;
