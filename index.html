@@ -7,148 +7,162 @@
 		<title>EVC Network</title>
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+		<link
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			rel="stylesheet"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-		
 	</head>
 	<body>
 		<!-- Navigation section-->
-			<div class="container navbar-container">
-					<nav class="navbar navbar-expand-md navbar-dark fixed-top site-header">
-						<a class="navbar-brand" href="#">EVCN</a>
-						<button
-							class="navbar-toggler collapsed"
-							type="button"
-							data-toggle="collapse"
-							data-target="#navbarsExampleDefault"
-							aria-controls="navbarsExampleDefault"
-							aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-			
-						<div class="navbar-collapse collapse" id="navbarsExampleDefault" style="">
-							<ul class="navbar-nav mr-auto">
-								<li class="nav-item active">
-									<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#evcn-map">EVCN Map</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#contact-us">Contact Us</a>
-								</li>
+		<div class="container navbar-container">
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top site-header">
+				<a class="navbar-brand" href="#"><i class="fas fa-charging-station"></i></a>
+				<button
+					class="navbar-toggler collapsed"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarsExampleDefault"
+					aria-controls="navbarsExampleDefault"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="navbar-collapse collapse" id="navbarsExampleDefault">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#evcn-map">EVCN Map</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact-us">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- About section-->
+		<div class="container-fluid starter-template">
+			<div class="container text-background">
+				<h1>EVCSN stands for Electric Vehicle Charging Station Network</h1>
+				<p class="lead">
+					Our aim is to faciliate EV owner with an up to date charging station network, <br />
+					that will provide you with either the cheapest or quickest location within your <br />
+					area or Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut voluptates aspernatur esse reiciendis,
+					sit quam qui perferendis quaerat veritatis deserunt quae consequuntur?
+				</p>
+			</div>
+		</div>
+		<!-- map section-->
+		<div class="container-fluid">
+			<div class="row network-container py-3">
+				<div class="col-sm-12 col-md-12 col-lg-12 tt">
+					<iframe
+						width="100%"
+						height="250"
+						frameborder="0"
+						style="border:0"
+						src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&q=electric+vehicle+charging+station"
+						allowfullscreen
+					>
+					</iframe>
+				</div>
+			</div>
+		</div>
+		<!-- Contact Us section-->
+		<div id="contact-us"></div>
+		<div class="container-fluid">
+			<div class="row contact-us-container py-3">
+				<div class="col-sm-12 col-md-8 col-lg-8">
+					<p class="lead">
+						If you would like us to add your charging station to our ever growing network, feel free to drop us an email
+						with a brief description along with your contact details and we will get back to you.
+					</p>
+					<form>
+						<div class="form-group">
+							<input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
 						</div>
-					</nav>
-					</div>
-					<!-- About section-->
-					<div class="container-fluid starter-template">
-						<div class="container text-background">
-							<h1>EVCSN stands for Electric Vehicle Charging Station Network </h1>
-							<p class="lead">
-								Our aim is to faciliate  EV owner with an up to date charging station network, <br>
-								that will provide you with either the cheapest or quickest location within your <br>
-								area or Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut voluptates aspernatur 
-								esse reiciendis, sit quam qui perferendis quaerat veritatis deserunt quae consequuntur? 
-								Repellendus optio similique rem repudiandae praesentium, exercitationem obcaecati. 
-							</p>
+						<div class="form-group">
+							<input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
 						</div>
-					</div>
-					<!-- map section-->
-					<br>
-					<br>
-							<div class="container-fluid">
-								<div class="row network-container py-3">
-									<div class="col-sm-12 col-md-10 col-lg-10">
-											<div id="map"></div>
-											
-										</div>
-								
+						<div class="form-group">
+							<textarea
+								rows="5"
+								name="comment"
+								id="comment"
+								class="form-control"
+								placeholder="Comment"
+								required
+							></textarea>
 						</div>
-						</div>
-						<!-- Contact Us section-->
-						<div id="contact-us"></div>
-						<br>
-					<br>
-						<div class="container-fluid">
-							<div class="row contact-us-container py-3">
-								<div class="col-sm-12 col-md-8 col-lg-8">
-									<p class="lead">If you would like us to add your charging station to our ever growing network, feel free to drop us an email with a brief description along with your 
-										contact details and we will get back to you. </p>
-										<form>
-												<div class="form-group">
-													<input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-												</div>
-												<div class="form-group">
-													<input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-												</div>
-												<div class="form-group">
-													<textarea
-														rows="5"
-														name="comment"
-														id="comment"
-														class="form-control"
-														placeholder="Comment"
-														required
-													></textarea>
-												</div>
-												<div class="form-row text-center">
-													<div class="col">
-														<button type="submit" class="btn btn-secondary btn-contact-submit">Submit</button>
-													</div>
-												</div>
-											</form>
-								</div>
+						<div class="form-row text-center">
+							<div class="col">
+								<button type="submit" class="btn btn-secondary btn-contact-submit">Submit</button>
 							</div>
 						</div>
-					<!-- Footer section-->
-					<footer class="footer mt-auto py-3">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-6 copy-right-text">
-						  <span class="text-muted">&copy; Tagged Media 2019. All Rights Reserved</span>
-						</div>
-						<div class="col-md-4 follow-us-container">
-									<ul class="social-icons">
-										<li class="social-icons-list-items">
-											<a target="_blank" href="#">
-												<i class="fa fa-facebook" aria-hidden="false"></i>
-												<span class="sr-only">Facebook</span>
-											</a>
-										</li>
-										<li class="social-icons-list-items">
-											<a target="_blank" href="#">
-												<i class="fa fa-twitter" aria-hidden="false"></i>
-												<span class="sr-only">Twitter</span>
-											</a>
-										</li>
-										<li class="social-icons-list-items">
-											<a target="_blank" href="#">
-												<i class="fa fa-instagram" aria-hidden="false"></i>
-												<span class="sr-only">Instagram</span>
-											</a>
-										</li>
-									</ul>
-							</div>
-						</div>
-						</div>
-					</footer>	
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- Footer section-->
+		<footer class="footer mt-auto py-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 follow-us-container">
+						<ul class="social-icons">
+							<li class="social-icons-list-items">
+								<a target="_blank" href="#">
+									<i class="fa fa-facebook" aria-hidden="false"></i>
+									<span class="sr-only">Facebook</span>
+								</a>
+							</li>
+							<li class="social-icons-list-items">
+								<a target="_blank" href="#">
+									<i class="fa fa-twitter" aria-hidden="false"></i>
+									<span class="sr-only">Twitter</span>
+								</a>
+							</li>
+							<li class="social-icons-list-items">
+								<a target="_blank" href="#">
+									<i class="fa fa-instagram" aria-hidden="false"></i>
+									<span class="sr-only">Instagram</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-12 col-md-12 copy-right-text">
+						<p class="copyright">&copy; Tagged Media 2019. All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
-	<script>
-			function initMap() {
-				var map = new google.maps.Map(document.getElementById("map"), {
-					zoom: 8,
-					center: {
-						lat: 59.3293,
-						lng: 18.0686
-					}
-				});
-			}
-		</script>
-	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-	</script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&callback=initMap">
-    </script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&libraries=places&callback=initAutocomplete"
+		async
+		defer
+	></script>
+
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"
+	></script>
 </html>
