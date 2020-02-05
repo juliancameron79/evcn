@@ -5,14 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>EVC Network</title>
-
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-		<link
-			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-			rel="stylesheet"
-			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-			crossorigin="anonymous"
-		/>
 		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	</head>
@@ -50,20 +44,25 @@
 		</div>
 		<!-- About section-->
 		<div class="container-fluid starter-template">
-			<div class="container text-background">
-				<h1>EVCSN stands for Electric Vehicle Charging Station Network</h1>
-				<p class="lead">
-					Our aim is to faciliate EV owner with an up to date charging station network, <br />
-					that will provide you with either the cheapest or quickest location within your <br />
-					area or Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut voluptates aspernatur esse reiciendis,
-					sit quam qui perferendis quaerat veritatis deserunt quae consequuntur?
-				</p>
+			<div class="row about-row">
+				<div class="col-md-8 text-background">
+					<h1 class="about-title">
+						<span class="about-title">EVCN</span><br /><span class="space">====<br /></span>
+						Electric Vehicle Charging Network
+					</h1 class="about-title">
+					<p class="lead">
+						Our aim is to faciliate EV owner with an up to date charging station network,
+						that will provide you with either the cheapest or quickest location within your
+						area.
+					</p>
+				</div>
 			</div>
 		</div>
 		<!-- map section-->
-		<div class="container-fluid">
-			<div class="row network-container py-3">
+		<div class="container-fluid map-container">
+			<div class="row map-row py-3">
 				<div class="col-sm-12 col-md-12 col-lg-12 tt">
+					<div id="map"></div>
 					<iframe
 						width="100%"
 						height="250"
@@ -78,8 +77,8 @@
 		</div>
 		<!-- Contact Us section-->
 		<div id="contact-us"></div>
-		<div class="container-fluid">
-			<div class="row contact-us-container py-3">
+		<div class="container-fluid contact-us-container">
+			<div class="row contact-us-row py-3">
 				<div class="col-sm-12 col-md-8 col-lg-8">
 					<p class="lead">
 						If you would like us to add your charging station to our ever growing network, feel free to drop us an email
@@ -98,7 +97,7 @@
 								name="comment"
 								id="comment"
 								class="form-control"
-								placeholder="Comment"
+								placeholder="Details"
 								required
 							></textarea>
 						</div>
@@ -145,12 +144,11 @@
 		</footer>
 	</body>
 	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&libraries=places&callback=initAutocomplete"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&libraries=places&callback=initMap"
 		async
-		defer
 	></script>
-
-	<script
+	<script src="assets/js/map.js"></script>
+	<!--<script
 		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"
@@ -164,5 +162,5 @@
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"
-	></script>
+	></script>-->
 </html>

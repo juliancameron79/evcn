@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Raleway", sans-serif;
+	font-family: 'Raleway', sans-serif;
 	background-color: #fff;
 }
 
@@ -20,6 +20,23 @@ body {
 	text-decoration: none;
 }
 
+.navbar-brand {
+	width: 20px;
+	border-style: dashed;
+}
+
+.site-header.navbar-brand a i {
+	margin-bottom: 0;
+	width: 32px;
+	height: 32px;
+	padding: 12px 0;
+	border-radius: 25%;
+	font-size: 13px;
+	line-height: 7px;
+	text-align: center;
+	color: #fff;
+}
+
 .starter-template {
 	padding: 3rem 1.5rem;
 	text-align: center;
@@ -29,24 +46,51 @@ body {
 	background-position: bottom;
 	height: 100vh;
 	padding-top: 6rem;
+	display: flex;
+	align-items: center;
+}
+
+.about-row {
+	display: flex;
+	justify-content: center;
 }
 
 .text-background {
+	padding: 1rem;
 	background-color: rgba(250, 235, 215, 0.66);
-	height: 100%;
+	height: auto;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
-h1 {
+h1.about-title {
 	font-size: 2rem;
 	font-weight: 800;
-	padding-top: 4rem;
+	padding-top: 1rem;
+}
+
+span.about-title {
+	font-size: 3rem;
+	font-weight: bolder;
+	letter-spacing: 0.3rem;
+}
+
+span.space {
+	letter-spacing: -4px;
+	margin: 0px;
+	padding: 0px;
 }
 
 .lead {
 	font-weight: 500;
+	padding: 1rem 0;
 }
 
-.network-container {
+/* Map section */
+
+.map-row {
 	background-color: #fff;
 	height: auto;
 	display: flex;
@@ -54,10 +98,12 @@ h1 {
 	align-content: center;
 }
 
-/* Map section */
-
 .tt {
 	padding: 0;
+}
+
+.map-container {
+	margin-top: 2.5rem;
 }
 
 #map {
@@ -67,6 +113,10 @@ h1 {
 /* Contact us section */
 
 .contact-us-container {
+	margin-top: 2.5rem;
+}
+
+.contact-us-row {
 	background-color: #ebebff;
 	height: auto;
 	display: flex;
@@ -102,15 +152,13 @@ h1 {
 	justify-content: center;
 }
 
-.copy-right-text {
-}
 .social-icons-list-items {
 	display: inline-block;
 	margin-right: 5px;
 }
 
-.social-icons {
-	padding: 0;
+ul.social-icons {
+	margin-bottom: 8px;
 }
 
 .social-icons li a i {
@@ -136,15 +184,16 @@ h1 {
 }
 
 .social-icons {
-	align-items: flex-start;
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
 }
 
-h5.footer-contact-title,
-h5.follow-us-title {
+h5.footer-contact-title {
 	font-weight: 300;
 }
 
-.follow-us-container {
+/*.follow-us-container {
 	display: flex;
 	justify-content: flex-start;
 }
@@ -154,4 +203,4 @@ h5.follow-us-title {
 		display: flex;
 		justify-content: flex-end;
 	}
-}
+}*/
