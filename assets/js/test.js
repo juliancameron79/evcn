@@ -27,13 +27,13 @@ function callback(results, status) {
 	if (status == 'OK') {
 		for (var i = 0; i < results.length; i++) {
 			var place = results[i];
-			console.log(results);
 
 			var marker = new google.maps.Marker({
 				position: place.geometry.location,
 				map: map,
 				title: place.name
 			});
+			var content = place.name;
 
 			var infowindow = new google.maps.InfoWindow({
 				content: content
