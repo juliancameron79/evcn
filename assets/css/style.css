@@ -9,6 +9,7 @@ body {
 	background-color: #000089e5;
 	/*-webkit-backdrop-filter: saturate(180%) blur(50px);
 	backdrop-filter: saturate(50%) blur(20px);*/
+	border-bottom: solid 1px #ebebff;
 }
 
 .site-header a {
@@ -20,9 +21,10 @@ body {
 	text-decoration: none;
 }
 
-.navbar-brand {
-	width: 20px;
-	border-style: dashed;
+.icon {
+	font-size: 1.5rem;
+	text-align: center;
+	color: #fff;
 }
 
 .site-header.navbar-brand a i {
@@ -36,6 +38,8 @@ body {
 	text-align: center;
 	color: #fff;
 }
+
+/* About Section */
 
 .starter-template {
 	padding: 3rem 1.5rem;
@@ -63,6 +67,7 @@ body {
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
+	border: 2px ridge #ebebff;
 }
 
 h1.about-title {
@@ -107,7 +112,7 @@ span.space {
 }
 
 #map {
-	min-height: 660px;
+	min-height: 100%;
 }
 
 /* Contact us section */
@@ -192,15 +197,3 @@ ul.social-icons {
 h5.footer-contact-title {
 	font-weight: 300;
 }
-
-/*.follow-us-container {
-	display: flex;
-	justify-content: flex-start;
-}
-
-@media screen and (min-width: 300px) {
-	.follow-us-container {
-		display: flex;
-		justify-content: flex-end;
-	}
-}*/
