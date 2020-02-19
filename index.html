@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+			
 		<meta charset="UTF-8" />
+		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		
 		<title>EVC Network</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
-		<script
-			type="text/javascript"
-			src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8"
-		></script>
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&libraries=places&callback=initMap"
+		></script>
 	</head>
 	<body>
 		<!-- Navigation section-->
 		<div class="container navbar-container">
 			<nav class="navbar navbar-expand-md navbar-dark fixed-top site-header">
-				<a class="navbar-brand" href="#"><i class="fas fa-charging-station"></i></a>
+				<a class="navbar-brand icon" href="#">
+					<i class="fas fa-charging-station" aria-hidden="false"></i>
+				</a>
 				<button
 					class="navbar-toggler collapsed"
 					type="button"
@@ -132,17 +137,20 @@
 						</ul>
 					</div>
 					<div class="col-sm-12 col-md-12 copy-right-text">
-						<p class="copyright">&copy; Tagged Media 2019. All Rights Reserved</p>
+						<p class="copyright">&copy; Tagged Media <script type="text/JavaScript">
+
+							document.write(new Date().getFullYear());
+							
+							</script>. All Rights Reserved</p>
 					</div>
 				</div>
 			</div>
 		</footer>
+		
 	</body>
+	
+	
 	<script src="assets/js/map.js"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&libraries=places&callback=initMap"
-		async
-	></script>
 	<script
 		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
