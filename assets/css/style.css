@@ -2,13 +2,13 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
-	background-color: #fff;
+	background-color: #b1b1ff;
 }
 
 .site-header {
 	background-color: #000089e5;
-	/*-webkit-backdrop-filter: saturate(180%) blur(50px);
-	backdrop-filter: saturate(50%) blur(20px);*/
+	-webkit-backdrop-filter: saturate(180%) blur(50px);
+	backdrop-filter: saturate(50%) blur(20px);
 	border-bottom: solid 1px #ebebff;
 }
 
@@ -22,104 +22,79 @@ body {
 }
 
 .icon {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	text-align: center;
 	color: #fff;
 }
 
-.site-header.navbar-brand a i {
-	margin-bottom: 0;
-	width: 32px;
-	height: 32px;
-	padding: 12px 0;
-	border-radius: 25%;
-	font-size: 13px;
-	line-height: 7px;
-	text-align: center;
+.pin-icon {
+	width: 1.6rem;
+	height: 1.6rem;
+	background: #e78011;
+	border-radius: 70% 50% 70% 0;
+	animation: animate 0.5s both;
+	border: 2px ridge #ebebff;
+}
+.pin-icon i {
+	position: absolute;
+	top: 0.27rem;
+	left: 0.45rem;
+	font-size: 0.7rem;
 	color: #fff;
+	transform: rotate(45deg);
 }
 
-/* About Section */
+/* About section */
 
-.starter-template {
-	padding: 3rem 1.5rem;
-	text-align: center;
-	background: url(/assets/images/forced-perspective-photography-of-cars-running-on-road-below-799443-cropped.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: bottom;
+.pinl {
+	top: 66vh;
+}
+
+.pin-about {
 	height: 100vh;
-	padding-top: 6rem;
-	display: flex;
-	align-items: center;
-}
-
-.about-row {
-	display: flex;
-	justify-content: center;
+	width: 100vw;
+	background: url('../images/7994432.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: luminosity;
+	background-color: rgba(224, 243, 243, 0.18);
 }
 
 .text-background {
+	top: 50%;
 	padding: 1rem;
-	background-color: rgba(250, 235, 215, 0.66);
+	background-color: whitesmoke;
 	height: auto;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-	border: 2px ridge #ebebff;
+	border: 2px solid #ebebff;
 }
 
 h1.about-title {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
 	font-size: 2rem;
 	font-weight: 800;
-	padding-top: 1rem;
 }
 
-span.about-title {
-	font-size: 3rem;
-	font-weight: bolder;
-	letter-spacing: 0.3rem;
-}
-
-span.space {
-	letter-spacing: -4px;
-	margin: 0px;
-	padding: 0px;
-}
-
-.lead {
+p.lead-about-text {
 	font-weight: 500;
-	padding: 1rem 0;
+	padding-top: 1rem;
+	color: #e78011;
+	text-align: justify;
+	margin-bottom: 0;
 }
 
 /* Map section */
 
-.map-row {
-	background-color: #fff;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-
-.tt {
-	padding: 0;
-}
-
-.map-container {
-	margin-top: 2.5rem;
-}
-
 #map {
-	min-height: 100%;
+	height: 100%;
 }
 
 /* Contact us section */
-
-.contact-us-container {
-	margin-top: 2.5rem;
-}
 
 .contact-us-row {
 	background-color: #ebebff;
@@ -127,6 +102,13 @@ span.space {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	padding: 1rem 0;
+}
+
+p.lead-contact-us-text {
+	font-weight: 500;
+	padding: 1rem 0;
+	text-align: justify;
 }
 
 .email-container {
@@ -147,7 +129,8 @@ span.space {
 
 .footer {
 	background-color: #fff;
-	height: 20px;
+	height: auto;
+	padding: 0.5rem 0rem;
 }
 
 .copyright {
@@ -196,4 +179,25 @@ ul.social-icons {
 
 h5.footer-contact-title {
 	font-weight: 300;
+}
+
+/* Keyframes */
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: translateY(-2000px) rotate(0);
+		filter: alpha(opacity=0);
+	}
+	60% {
+		opacity: 1;
+		transform: translateY(30px) rotate(-45deg);
+		filter: none;
+	}
+	80% {
+		transform: translateY(-10px) rotate(-45deg);
+	}
+	100% {
+		transform: translateY(0px) rotate(-45deg);
+	}
 }
