@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Raleway', sans-serif;
-	background-color: #b1b1ff;
+	background-color: #ebebff;
 }
 
 .site-header {
@@ -44,25 +44,52 @@ body {
 	transform: rotate(45deg);
 }
 
-/* About section */
-
-.pinl {
-	top: 66vh;
-}
+/* Pin section */
 
 .pin-about {
 	height: 100vh;
-	width: 100vw;
-	background: url('../images/7994432.png');
-	background-position: center center;
+	background: url('../images/799443.jpg');
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-blend-mode: luminosity;
 	background-color: rgba(224, 243, 243, 0.18);
 }
 
+.about-row {
+	display: flex;
+	justify-content: center;
+	align-content: space-around;
+	height: 100vh;
+}
+
+.pinl {
+	display: flex;
+	justify-content: center;
+}
+
+.pin {
+	position: absolute;
+	width: 5.6rem;
+	height: 5.6rem;
+	top: 7vh;
+	background: #e78011;
+	border-radius: 70% 50% 70% 0;
+	animation: animate 1s both;
+	border: 2px solid #ebebff;
+}
+.pin i {
+	position: absolute;
+	top: 1.1rem;
+	left: 1.7rem;
+	font-size: 2.8rem;
+	color: #fff;
+	transform: rotate(45deg);
+}
+
 .text-background {
-	top: 50%;
+	position: relative;
+	bottom: -22%;
 	padding: 1rem;
 	background-color: whitesmoke;
 	height: auto;
@@ -90,11 +117,27 @@ p.lead-about-text {
 
 /* Map section */
 
+.map-row {
+	background-color: #fff;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.map-col {
+	padding: 0;
+}
+
 #map {
 	height: 100%;
 }
 
 /* Contact us section */
+
+.contact-us-container {
+	background-color: #ebebff;
+}
 
 .contact-us-row {
 	background-color: #ebebff;
@@ -181,6 +224,26 @@ h5.footer-contact-title {
 	font-weight: 300;
 }
 
+/* media query */
+
+@media (min-width: 992px) {
+	.pin {
+		top: -2vh;
+	}
+}
+
+@media (min-width: 1024px) {
+	.pin {
+		top: 9vh;
+	}
+}
+
+@media (min-width: 1200px) {
+	.pin {
+		top: -7vh;
+	}
+}
+
 /* Keyframes */
 
 @keyframes animate {
@@ -199,5 +262,24 @@ h5.footer-contact-title {
 	}
 	100% {
 		transform: translateY(0px) rotate(-45deg);
+	}
+}
+
+@keyframes animate-bg {
+	0% {
+		opacity: 0;
+		transform: translateY(-2000px) rotate(0);
+		filter: alpha(opacity=0);
+	}
+	60% {
+		opacity: 1;
+		transform: translateY(30px) rotate(0);
+		filter: none;
+	}
+	80% {
+		transform: translateY(-10px) rotate(0);
+	}
+	100% {
+		transform: translateY(0px) rotate(0);
 	}
 }
