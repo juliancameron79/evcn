@@ -7,21 +7,22 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 		<title>EVC Network</title>
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 		<script
-			async
-			defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&libraries=places&callback=initMap"
+			type="text/javascript" async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-REZbseJcpohjwDJARF2KqHT4YaulG_8&libraries=places"
 		></script>
 	</head>
 	<body>
 		<!-- Navigation section-->
-
+<div class="wrapper">
 		<nav class="navbar navbar-expand-md navbar-dark fixed-top site-header">
 			<a class="navbar-brand icon" href="#">
 				<div class="pin-icon"><i class="fas fa-charging-station" aria-hidden="false"></i></div>
@@ -58,7 +59,6 @@
 						<div class="col-md-9 pinl">
 								<div class="pin"><i class="fas fa-charging-station" aria-hidden="false"></i></div>
 							</a>
-							<!--<img class="pin" src="../assets/images/marker.png" alt="" />-->
 						</div>
 	
 						<div class="col-md-9 pinl">
@@ -78,18 +78,14 @@
 				</div>
 			</div>
 		<!-- map section-->
-		<div class="container-fluid map-container">
-			<div class="row map-row">
-				<div class="col-sm-12 col-md-12 col-lg-12 map-col">
-					<div id="map"></div>
-				</div>
-			</div>
-		</div>
+			<div class="map-container pt-4 pb-4">
+				<div id="map"></div>
+			</div>			
 		<div id="contact-us"></div>
-		<div class="container-fluid contact-us-container">
+		<div class="container contact-us-container">
 			<div class="row contact-us-row">
-				<div class="col-md-8 pt-3 pb-3">
-					<p class="lead-contact-us-text">
+				<div class="col-md-9 pt-4 pb-4">
+					<p class="lead-contact-us-text mb-3">
 						If you would like us to add your charging station to our ever growing network, feel free to drop us an email
 						with a brief description along with your contact details and we will get back to you.
 					</p>
@@ -123,7 +119,7 @@
 		<footer class="footer mt-auto">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 follow-us-container pt-3">
+					<div class="col-md-12 follow-us-container pt-4">
 						<ul class="social-icons">
 							<li class="social-icons-list-items">
 								<a target="_blank" href="#">
@@ -157,6 +153,7 @@
 				</div>
 			</div>
 		</footer>
+	</div>
 	</body>
 	<script src="assets/js/map.js"></script>
 	<script

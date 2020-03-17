@@ -1,58 +1,49 @@
-var map
-var infowindow
+var map;
+var service;
 
-var request
-var service
-var marker = []
-var location
-
-function initialize() {
-	var center = new google.maps.LatLng(51.5074, 0.1278)
-
-	map = new google.maps.Map(document.getElementById('map'), {
-		center: center,
-		zoom: 13
-	})
-
-	request = {
-		location: map.getCenter,
-		radius: '547',
-		tyes: 'parks'
-	}
-
-	infoWindow = new google.maps.InfoWindow()
-
-	var service = new google.maps.places.PlacesService(map)
-	service.nearbySearch(request, callback)
-}
-
-function callback(results, status) {
-	if (status === google.maps.places.PlacesServiceStatus.OK) {
+function handleSearchResults(results, status) {
+	console.log(results);
+	{
 		for (var i = 0; i < results.length; i++) {
-			marker.push(createMarker(results[i]))
+			var marker = new google.maps.Marker({
+				position: results[i].geometry.location,
+				animation: google.maps.Animation.DROP,
+				map: map,
+				icon: '/assets/images/electric_vehicle_charging_station_pinlet-2-medium.png'
+			});
 		}
 	}
 }
 
-function createMarker(place) {
-	var place = place.geometry.location
+function performSearch() {
+	var request = {
+		bounds: map.getBounds(),
+		name: ['electric', 'vehicle', 'charging', 'station']
+	};
+	service.nearbySearch(request, handleSearchResults);
+}
+
+function initialise(location) {
+	var currentLocation = new google.maps.LatLng(location.coords.latitude, location.coords.longitude);
+
+	var mapOptions = {
+		center: currentLocation,
+		zoom: 12,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+
+	map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
 	var marker = new google.maps.Marker({
-		map: map,
-		position: place.geometry.location
-	})
+		position: currentLocation,
+		map: map
+	});
 
-	google.maps.event.addListener(marker, 'click', function() {
-		infoWindow.setContent(place.name)
-		infoWindow.open(map, this)
-	})
-	return marker
+	service = new google.maps.places.PlacesService(map);
+
+	google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
 }
 
-function clearResults(marker) {
-	for (var m in marker) {
-		marker[m].setMap(null)
-	}
-	markers = []
-}
-
-google.maps.event.addDomListener(window, 'load', initialize)
+$(document).ready(function() {
+	navigator.geolocation.getCurrentPosition(initialise);
+});
