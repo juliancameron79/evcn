@@ -2,14 +2,13 @@ var map;
 var service;
 
 function handleSearchResults(results, status) {
-	console.log(results);
 	{
 		for (var i = 0; i < results.length; i++) {
 			var marker = new google.maps.Marker({
 				position: results[i].geometry.location,
 				animation: google.maps.Animation.DROP,
 				map: map,
-				icon: '/assets/images/electric_vehicle_charging_station_pinlet-2-medium.png'
+				icon: 'assets/images/evcs-pinlet-2-medium.png'
 			});
 		}
 	}
