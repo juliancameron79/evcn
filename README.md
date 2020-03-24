@@ -13,19 +13,19 @@ The site is aimed at EV owners with and without privately owned charging station
 
 ### Wireframes/Mockups
 
-Please find paper and pen initial wireframe design <a href="wireframe/initial-wireframe-design.jpg">here</a>.
+Please find paper and pen initial wireframe design <a href="wireframe-mockups/initial-wireframe-design.jpg">here</a>.
 
-Please find paper and pen mockup design <a href="wireframes/mockup-design.jpg">here</a>.
+Please find paper and pen mockup design <a href="wireframes-mockups/mockup-design.jpg">here</a>.
 
 ## Features
 
 ### Existing Features
 
-EVCN is a super easy cluster free site. The site is a one page site, broken up into three main sections, About EVCN Map and Contact Us
+EVCN is a super easy cluster free site. The site is a one page site, broken up into three main sections, Landing page EVCN Map and Contact Us
 
-#### About
+#### Home
 
-Eye catching about section providing a brief overview of what the site has to offer.
+Eye catching landing page providing a brief overview of what the site has to offer.
 
 #### EVCN Map
 
@@ -99,6 +99,7 @@ This project uses HTML, CSS and JavaScript programming languages.
   - Opera
   - Microsoft Edge
   - Mozilla Firefox
+  - Safari
 
 ## Deployment
 
@@ -136,12 +137,10 @@ To clone this project from GitHub:
 
 ### Media
 
-#### Images
-
 - The background image used was sourced from Pexels.
 - The map markers used to mark locations on the map was sourced from Google Maps.
 
-#### Code
+### Code
 
 - Code for Google Maps api taken from youtube tutorial.
 
