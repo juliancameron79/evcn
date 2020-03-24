@@ -3,60 +3,102 @@
 To create a site that calls on the google Maps API and or Google Places API to allow users to locate services in their immediate
 area.
 
-I have created a site that allows users to locate Electric Vehicle charging stations at their current location without having to input a search.
+I have created a site that allows users to locate Electric Vehicle charging stations near by and provide details of privately owned chargers to add to the EVCN.
 
 ## UX
 
-my site is aimed at anyone looking to own or already owns an electric vehicle and would like to know all the available services
-where they are, from public charging networks to private charging station. the site not only shows both but also allows the user to add their own to the network via email.
+The site is aimed at EV owners with and without privately owned charging stations on their properties. The site will find the users location and provide the user with all available charging stations, from public charging stations to private charging stations. The site also allows users to add their own charging station to EVCN via email.
 
-- As a user type, I want to see charging stations near me, so that i can
+- As a user type, I want to see all available charging stations that are near me.
+
+### Wireframes/Mockups
+
+Please find paper and pen initial wireframe design <a href="wireframe/initial-wireframe-design.jpg">here</a>.
+
+Please find paper and pen mockup design <a href="wireframes/mockup-design.jpg">here</a>.
 
 ## Features
 
-The site is one page broken up into three main sections, about EVCN Map and contact us
-
 ### Existing Features
 
-EVCN is an super easy to use webpage, it’s designed for all ages .
+EVCN is a super easy cluster free site. The site is a one page site, broken up into three main sections, About EVCN Map and Contact Us
+
+#### About
+
+Eye catching about section providing a brief overview of what the site has to offer.
+
+#### EVCN Map
+
+EVCN Map section providing instant feedback on the users location.
+
+#### Contact Us
+
+Contact us section requires the user to input their name email address and details on their charging station.
 
 ### Features Left to Implement
 
-- Infowindow
+#### Infowindow
 
-  - In future I would like to implement a popup info window for every marker of the search results to show the name address and type of charging station.
+In future I would like to implement a popup info window for every marker of the search results to show the name address and type of charging station.
 
-- Side panel with brief description
+#### Side panel with brief description
 
-  - The side panel will display name address type of charging station number of chargers, avaiablitiy of chargers and a rating of the station. A get direction with way points button.
+The side panel will display name address type of charging station number of chargers, avaiablitiy of chargers and a rating of the station. A get direction with way points button.
 
-- Members sign in section
+#### Members sign in section
 
-  - I would also like to add a sign up and login button that would give members access to a list of privately owed chargers that the members could use when they are available.
+I would also like to add a sign up and login button that would give members access to a list of privately owed chargers that the members could use when they are available.
 
 ## Technologies Used
 
 This project uses HTML, CSS and JavaScript programming languages.
 
+- **HTML** and **CSS**
+
+  - The project uses base languages used to create website
+
+- **Javascript**
+
+  - The project uses Javascript to create map
+
+- **AJAX**
+
+  - The project uses AJAX to initialise map
+
 - **VS Code**
-  Developer used VS Code for their IDE while building the website.
+
+  - The project was developed useing VS Code for building the website
 
 - **Bootstrap**
-  The project uses Bootstrap to simplify the structure of the website and make the website responsive easily.
+
+  - The project uses Bootstrap to simplify the structure of the website and make the website responsive easily
 
 - **Google Fonts**
-  The project uses Google fonts to style the website fonts.
+
+  - The project uses Google fonts to style the website fonts
 
 - **FontAwesome**
-  The project also uses Bootstrap to provide icons from
 
-* **GitHub**
-  This project uses GitHub to store and share all project code remotely.
+  - The project uses Fontawesome to provide icons
 
-* **AutoPrefixer**
-  The project used AutoPrefixer to make sure all css prefixes were the most up to date versions.
+- **GitHub**
+
+  - This project uses GitHub to store and share all project code remotely
+
+- **AutoPrefixer**
+  - The project used AutoPrefixer to make sure all css prefixes were the most up to date versions
 
 ## Testing
+
+- All code used on the site has been tested to ensure everything is working as expected
+
+- All code used on the site has been tested across multiple devices via DevTool option in Chrome.
+
+- Site has been viewed and tested in the following browsers:
+  - Google Chrome
+  - Opera
+  - Microsoft Edge
+  - Mozilla Firefox
 
 ## Deployment
 
@@ -96,7 +138,7 @@ To clone this project from GitHub:
 
 #### Images
 
-- The background image used was sourced from Pexel.
+- The background image used was sourced from Pexels.
 - The map markers used to mark locations on the map was sourced from Google Maps.
 
 #### Code
