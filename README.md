@@ -13,7 +13,7 @@ The site is aimed at EV owners with and without privately owned charging station
 
 ### Wireframes/Mockups
 
-Please find paper and pen initial wireframe design <a href="wireframe-mockups/initial-wireframe-design.jpg">here</a>.
+Please find paper and pen initial wireframe design <a href="wireframes-mockups/initial-wireframe-design.jpg">here</a>.
 
 Please find paper and pen mockup design <a href="wireframes-mockups/mockup-design.jpg">here</a>.
 
