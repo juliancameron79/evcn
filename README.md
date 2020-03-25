@@ -57,19 +57,19 @@ I would also like to add a sign up and login button that would give members acce
 
 This project uses HTML, CSS and JavaScript programming languages.
 
-- <a href=".">**HTML**</a> and <a href=".">**CSS**</a>
+- <a href="https://en.wikipedia.org/wiki/HTML5#References">**HTML**</a> and <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">**CSS**</a>
 
   - The project uses base languages used to create website
 
-- <a href="https://jquery.com">**Javascript**</a>
+- <a href="https://en.wikipedia.org/wiki/JavaScript">**Javascript**</a>
 
   - The project uses Javascript to create map
 
-- **AJAX**<a href="."></a>
+- <a href="https://en.wikipedia.org/wiki/Ajax_(programming)">**AJAX**</a>
 
   - The project uses AJAX to initialise map
 
-- <a href="https://jquery.com">**VS Code**</a>
+- <a href="https://code.visualstudio.com/">**VS Code**</a>
 
   - The project was developed useing VS Code for building the website
 
@@ -89,7 +89,7 @@ This project uses HTML, CSS and JavaScript programming languages.
 
   - This project uses GitHub to store and share all project code remotely
 
-- **<a href="https://autoprefixer.github.io">**AutoPrefixer</a>
+- <a href="https://autoprefixer.github.io">**AutoPrefixer**</a>
   - The project used AutoPrefixer to make sure all css prefixes were the most up to date versions
 
 ## Testing
