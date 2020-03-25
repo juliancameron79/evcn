@@ -37,6 +37,10 @@ Contact us section requires the user to input their name email address and detai
 
 ### Features Left to Implement
 
+#### Search function
+
+A text input search function, that allows the user to search for charging stations in other areas.
+
 #### Infowindow
 
 In future I would like to implement a popup info window for every marker of the search results to show the name address and type of charging station.
@@ -53,39 +57,39 @@ I would also like to add a sign up and login button that would give members acce
 
 This project uses HTML, CSS and JavaScript programming languages.
 
-- **HTML** and **CSS**
+- <a href=".">**HTML**</a> and <a href=".">**CSS**</a>
 
   - The project uses base languages used to create website
 
-- **Javascript**
+- <a href="https://jquery.com">**Javascript**</a>
 
   - The project uses Javascript to create map
 
-- **AJAX**
+- **AJAX**<a href="."></a>
 
   - The project uses AJAX to initialise map
 
-- **VS Code**
+- <a href="https://jquery.com">**VS Code**</a>
 
   - The project was developed useing VS Code for building the website
 
-- **Bootstrap**
+- <a href="https://getbootstrap.com/">**Bootstrap**</a>
 
   - The project uses Bootstrap to simplify the structure of the website and make the website responsive easily
 
-- **Google Fonts**
+- <a href="https://fonts.google.com">**Google Fonts**</a>
 
   - The project uses Google fonts to style the website fonts
 
-- **FontAwesome**
+- <a href="https://fontawesome.com/">**FontAwesome**</a>
 
   - The project uses Fontawesome to provide icons
 
-- **GitHub**
+- <a href="https://github.com">**GitHub**</a>
 
   - This project uses GitHub to store and share all project code remotely
 
-- **AutoPrefixer**
+- **<a href="https://autoprefixer.github.io">**AutoPrefixer</a>
   - The project used AutoPrefixer to make sure all css prefixes were the most up to date versions
 
 ## Testing
@@ -94,12 +98,18 @@ This project uses HTML, CSS and JavaScript programming languages.
 
 - All code used on the site has been tested across multiple devices via DevTool option in Chrome.
 
+  - Galaxy S5, click <a href="testing/devices/galaxy-s5-screen-shot.jpg">here</a> to view screen shot.
+  - Pixel 2 XL, click <a href="testing/devices/pixel2-xl-screen-shot.jpg">here</a> to view screen shot.
+  - iPhone 6/7/8, click <a href="testing/devices/iphone-6-7-8-screen-shot.jpg">here</a> to view screen shot.
+  - iPhone X, click <a href="testing/devices/iphone-x-screen-shot.jpg">here</a> to view screen shot.
+  - iPad, click <a href="testing/devices/ipad-screen-shot.jpg">here</a> to view screen shot.
+
 - Site has been viewed and tested in the following browsers:
-  - Google Chrome
-  - Opera
-  - Microsoft Edge
-  - Mozilla Firefox
-  - Safari
+  - Google Chrome, click <a href="testing/browsers/google-chrome-screen-shot.jpg">here</a> to view screen shot.
+  - Opera, click <a href="testing/browsers/opera-screen-shot.jpg">here</a> to view screen shot.
+  - Microsoft Edge, click <a href="testing/browsers/microsoft-edge-screen-shot.jpg">here</a> to view screen shot.
+  - Mozilla Firefox, click <a href="testing/browsers/firefox-screen-shot.jpg">here</a> to view screen shot.
+  - Safari, click <a href="testing/browsers/safari-screen-shot.jpg">here</a> to view screen shot.
 
 ## Deployment
 
